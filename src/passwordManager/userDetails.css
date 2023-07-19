@@ -1,0 +1,182 @@
+.bg-container {
+  background-color: #9ba9eb;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.aap-logo {
+  height: 50px;
+  width: 150px;
+}
+.user-details-main-container {
+  background-color: #5763a5;
+  background-size: cover;
+  padding: 40px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.new-password {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Roboto';
+  color: #ffffff;
+  padding-bottom: 5px;
+}
+.input-logo-container {
+  background-color: #ffffff;
+  width: 30%%;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 10px;
+  border-radius: 3px;
+  margin-bottom: 35px;
+}
+.input-logo {
+  height: 18px;
+  width: 18px;
+  align-self: center;
+  margin-right: 8px;
+}
+.input {
+  outline: none;
+  border: none;
+  width: 100%;
+  border-left: 1px solid #c3caea;
+  padding-left: 10px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.form-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.add-btn {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: #ffffff;
+  background-color: #0b69ff;
+  background-size: cover;
+  height: 28px;
+  width: 60px;
+  border: none;
+  border-radius: 3px;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.user-form-details {
+  background-color: #454f84;
+  padding: 30px;
+  padding-bottom: 20px;
+  width: 50%;
+  border-radius: 3px;
+}
+
+.desktop-lock-container {
+}
+.desktop-img {
+  height: 400px;
+  width: 400px;
+  margin-left: 30px;
+}
+
+.search-your-password-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.search-bar-logo-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  height: 25px;
+  border-radius: 3px;
+}
+.password-style {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Roboto';
+  color: #ffffff;
+  margin-top: 0px;
+  margin-right: 8px;
+}
+.search-logo {
+  height: 20px;
+  width: 20px;
+  align-self: center;
+}
+.op-container {
+  padding-top: 20px;
+}
+.user-find-input {
+  height: 25px;
+  outline: none;
+  border: none;
+  border-left: 1px solid #c3caea;
+  border-radius: 3px;
+}
+.hori {
+  background-color: red;
+}
+.check-box-label-show {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.check-box {
+  height: 18px;
+  width: 18px;
+  align-self: center;
+}
+.show-password {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  color: #ffffff;
+  align-self: center;
+}
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-img {
+  height: 50%;
+  width: 50%;
+  text-align: center;
+}
+.no-passwords {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+.result-container {
+  margin-left: 0px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+}
+.ul-element-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.psdText-count-container {
+  display: flex;
+  flex-direction: row;
+}
