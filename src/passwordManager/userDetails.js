@@ -16,6 +16,7 @@ class PasswordManager extends Component {
     isTrue: true,
     showPassword: true,
     userValue: '',
+    activeWebsite: [],
   }
 
   onChangeWebsite = event => {
@@ -76,11 +77,34 @@ class PasswordManager extends Component {
   }
 
   DisplayWebSite = webSite => {
-    console.log(webSite)
+    this.setState(prevState => ({
+      activeWebsite: [...prevState.activeWebsite, webSite],
+    }))
+  }
+
+  displayFilteredData = () => {
+    const {intialList, userValue, activeWebsite} = this.state
+
+    if (activeWebsite.length > 0) {
+      const filteredData = activeWebsite.filter(eachList =>
+        eachList.userWebsite.includes(userValue),
+      )
+      return filteredData
+    }
+    return intialList
   }
 
   render() {
-    const {isTrue, count, intialList, showPassword} = this.state
+    const {
+      isTrue,
+      count,
+      intialList,
+      showPassword,
+      userWebsite,
+      userName,
+      userPassword,
+      userValue,
+    } = this.state
 
     return (
       <div className="bg-container">
@@ -101,6 +125,7 @@ class PasswordManager extends Component {
                     className="input-logo"
                   />
                   <input
+                    value={userWebsite}
                     type="text"
                     placeholder="Enter Website"
                     className="input"
@@ -114,6 +139,7 @@ class PasswordManager extends Component {
                     className="input-logo"
                   />
                   <input
+                    value={userName}
                     type="text"
                     placeholder="Enter Username"
                     className="input"
@@ -127,6 +153,7 @@ class PasswordManager extends Component {
                     className="input-logo"
                   />
                   <input
+                    value={userPassword}
                     type="password"
                     placeholder="Enter Password"
                     className="input"
@@ -168,6 +195,7 @@ class PasswordManager extends Component {
                 className="search-logo"
               />
               <input
+                value={userValue}
                 type="search"
                 className="user-find-input"
                 onChange={this.userSearchValue}

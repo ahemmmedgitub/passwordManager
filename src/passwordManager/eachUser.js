@@ -6,7 +6,7 @@ const EachUserDetails = props => {
 
   const fstLetter = webSite[0]
 
-  getDisplayWebSite(webSite)
+  getDisplayWebSite(eachDetails)
 
   const onDeleteUser = () => {
     DeleteUser(id)
